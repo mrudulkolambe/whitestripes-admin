@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+
+*,
+body,
+html {
+  outline: none;
+  font-family: 'Nunito';
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.Nunito {
+  font-family: 'Nunito';
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #111828 10%, #143D4F 18%, #143D4F 26%, #111828 36%, #111828 46%, #1E214A 56%, #1E214A 66%, #111828 76%, #111828);
+  z-index: 0;
+}
+
+.bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  backdrop-filter: blur(100px);
+}
+
+.custom-width {
+  position: absolute;
+  top: 0;
+  left: 256px;
+  width: calc(100vw - 256px);
+  background: #eee;
+}
+
+.editor {
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.hiddenToolbar .ql-toolbar{
+  display: none !important;
+}
+
+.ql-container.ql-snow{
+  border: none !important;
+}
+
+.ql-toolbar{
+  background: #fff;
+  border: 1px solid #ccc !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+
+.ql-editor{
+  border: 1px solid #ccc !important;
+  border-radius: 8px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-top: none !important;
+  background: #fff;
+}
